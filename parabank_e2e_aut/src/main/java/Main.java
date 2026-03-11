@@ -46,7 +46,19 @@ public class Main {
         double promedio = sumatoria/5;
         System.out.println("Promedio:" + promedio);
 
+        /*
+        System.out.println("Creación cuenta");
+        String nombre = "Carlos Bolaños";
+        String correo = "Carlos@gmail.com";
+        String DNI = "1001010";
+        int monto = 40000;
+        int edad = 18;
 
+        if(edad >= 18 && monto >= 50000){
+            Cuenta miCuenta = new Cuenta(nombre,correo,DNI,monto,edad);
+            System.out.println("Cuenta Creada Exitosamente " + miCuenta.getNumeroCuenta());
+        }
+        */
 
 
     }
