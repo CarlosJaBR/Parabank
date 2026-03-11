@@ -1,5 +1,9 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args){
+        /*
         String luzSemaforo = "Rojo";
         if(luzSemaforo.equals("Verde")){
             System.out.println("Avanzar");
@@ -46,7 +50,7 @@ public class Main {
         double promedio = sumatoria/5;
         System.out.println("Promedio:" + promedio);
 
-        /*
+
         System.out.println("Creación cuenta");
         String nombre = "Carlos Bolaños";
         String correo = "Carlos@gmail.com";
@@ -58,8 +62,50 @@ public class Main {
             Cuenta miCuenta = new Cuenta(nombre,correo,DNI,monto,edad);
             System.out.println("Cuenta Creada Exitosamente " + miCuenta.getNumeroCuenta());
         }
+
+        ArrayList<String> cars = new ArrayList<String>();
+        cars.add("Volvo");
+        cars.add("BMW");
+        cars.add("Ford");
+        cars.add("Mazda");
+        System.out.println(cars);
+        cars.remove(1);
+        System.out.println(cars);
+        System.out.println(cars.size());
+        //cars.clear();
+        //System.out.println(cars);
+        cars.add("Mercedes");
+        cars.add("Kia");
+        for(int j = 0; j < cars.size(); j++){
+            System.out.println(cars.get(j));
+        }
+        ArrayList<String> myCars = new ArrayList<String>();
+        for(int i = 0; i< cars.size();i++){
+            myCars.add(cars.get(i));
+        }
+        System.out.println(myCars);
         */
 
+        System.out.println("Quiz");
+        ArrayList<Double> compras = new ArrayList<Double>();
+        Scanner scan = new Scanner(System.in);
+        double total = 0;
+        int mayores100 = 0;
+        int menores100 = 0;
+        for(int i = 0; i<5;i++){
+            System.out.println("Ingresa el valor de la compra: " + (1+i));
+            double compra = scan.nextDouble();
+            compras.add(compra);
+            total += compra;
+            if(compra>=100){
+                mayores100++;
+            }else{
+                menores100++;
+            }
+        }
+        System.out.println("ventas totales: " + total);
+        System.out.println("Ventas mayores o iguales a 100: " + mayores100);
+        System.out.println("Ventanas menores a 100: " + menores100);
 
     }
 }
