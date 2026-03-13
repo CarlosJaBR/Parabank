@@ -109,9 +109,12 @@ public class Main {
         */
 
         Cliente cliente = new Cliente("Carlos",1500000.0);
+        Cliente ana = new Cliente("Ana",900000.0);
         CalcularBonificacion calculo = new CalcularBonificacion();
-
-        System.out.println("Total bonificaciones: "+ calculo.bonificacion(cliente.getTotalCompras()));
-
+        double comisionJuan = calculo.bonificacion(cliente.getTotalCompras());
+        System.out.println(comisionJuan);
+        //System.out.println("Total bonificaciones: "+ calculo.bonificacion(ana.getTotalCompras()));
+        Vendedor vendedor = new Vendedor("Juanito");
+        System.out.println(vendedor.infoSalario(comisionJuan));
     }
 }
