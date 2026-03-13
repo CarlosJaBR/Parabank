@@ -1,18 +1,26 @@
 public class Cliente {
-    private String numCliente;
-    private String correo;
-    private String tipoCliente;
-    private String telefono;
 
+    private String nombre;
+    private Double totalCompras;
 
+    public Cliente(String nombre, Double totalCompras) {
+        this.nombre = nombre;
+        this.totalCompras = totalCompras;
+    }
 
-    @Override
-    public String toString() {
-        return "Cliente{" +
-                "numCliente='" + numCliente + '\'' +
-                ", correo='" + correo + '\'' +
-                ", tipoCliente='" + tipoCliente + '\'' +
-                ", telefono='" + telefono + '\''+
-                '}';
+    public Double getTotalCompras() {
+        return totalCompras;
+    }
+
+    public void setTotalCompras(Double totalCompras) {
+        this.totalCompras = totalCompras;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
     }
 }
