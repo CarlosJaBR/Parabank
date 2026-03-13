@@ -2,7 +2,7 @@ public class CalcularBonificacion {
 
     private Double totalBonificacion;
 
-    public double bonificacion1(Double valorVenta){
+    public double bonificacion(Double valorVenta){
         totalBonificacion = (double) 0;
         totalBonificacion = valorVenta*0.08;
 

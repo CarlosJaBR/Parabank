@@ -84,7 +84,7 @@ public class Main {
             myCars.add(cars.get(i));
         }
         System.out.println(myCars);
-        */
+
 
         System.out.println("Quiz");
         ArrayList<Double> compras = new ArrayList<Double>();
@@ -106,6 +106,12 @@ public class Main {
         System.out.println("ventas totales: " + total);
         System.out.println("Ventas mayores o iguales a 100: " + mayores100);
         System.out.println("Ventanas menores a 100: " + menores100);
+        */
+
+        Cliente cliente = new Cliente("Carlos",1500000.0);
+        CalcularBonificacion calculo = new CalcularBonificacion();
+
+        System.out.println("Total bonificaciones: "+ calculo.bonificacion(cliente.getTotalCompras()));
 
     }
 }
