@@ -8,7 +8,6 @@ public class Vendedor {
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
-
     public Vendedor(String nombre) {
         this.nombre = nombre;
     }
@@ -17,8 +16,8 @@ public class Vendedor {
         return 1500000+bonificacion;
     }
 
-    public String infoSalario(Double bonificacion){
-        return "El salario final del vendedor es: " +salarioTotal(bonificacion) ;
+    public void infoSalario(Double bonificacion){
+        System.out.println("El salario del vendedor: " + nombre + " es: " + salarioTotal(bonificacion));
     }
 
 

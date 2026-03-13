@@ -113,8 +113,9 @@ public class Main {
         CalcularBonificacion calculo = new CalcularBonificacion();
         double comisionJuan = calculo.bonificacion(cliente.getTotalCompras());
         System.out.println(comisionJuan);
-        //System.out.println("Total bonificaciones: "+ calculo.bonificacion(ana.getTotalCompras()));
+        double comision = calculo.bonificacion(ana.getTotalCompras());
         Vendedor vendedor = new Vendedor("Juanito");
-        System.out.println(vendedor.infoSalario(comisionJuan));
+        vendedor.infoSalario(comisionJuan);
+
     }
 }
