@@ -1,26 +1,14 @@
-public class Cliente {
+public class Cliente extends Persona{
 
-    private String nombre;
-    private Double totalCompras;
+   private String email;
+   private int numCliente;
 
-    public Cliente(String nombre, Double totalCompras) {
-        this.nombre = nombre;
-        this.totalCompras = totalCompras;
+    public Cliente(String nombre, String apellido, int id,String email,int numCliente) {
+        super(nombre, apellido, id);
+        this.email = email;
+        this.numCliente = numCliente;
     }
 
-    public Double getTotalCompras() {
-        return totalCompras;
-    }
 
-    public void setTotalCompras(Double totalCompras) {
-        this.totalCompras = totalCompras;
-    }
 
-    public String getNombre() {
-        return nombre;
-    }
-
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
-    }
 }

@@ -1,25 +1,14 @@
-public class Vendedor {
-    private String nombre;
+public class Vendedor extends Persona{
+    private int idVendedor;
 
-    public String getNombre() {
-        return nombre;
+    public Vendedor(String nombre, String apellido, int id, int idVendedor) {
+        super(nombre, apellido, id);
+        this.idVendedor = idVendedor;
     }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
+    @Override
+    public String toString() {
+        return super.toString() + "\n" +
+                "Id vendedor: " + idVendedor;
     }
-    public Vendedor(String nombre) {
-        this.nombre = nombre;
-    }
-
-    private double salarioTotal(Double bonificacion){
-        return 1500000+bonificacion;
-    }
-
-    public void infoSalario(Double bonificacion){
-        System.out.println("El salario del vendedor: " + nombre + " es: " + salarioTotal(bonificacion));
-    }
-
-
-
 }
