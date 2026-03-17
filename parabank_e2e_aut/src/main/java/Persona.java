@@ -45,6 +45,6 @@ public class Persona {
         return "**Información:**" + "\n" +
                 "Nombre: " + nombre + "\n"+
                 "Apellido: " + apellido + "\n"+
-                "Id: " + id + "\n";
+                "Id: " + id;
     }
 }

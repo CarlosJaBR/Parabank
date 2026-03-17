@@ -38,6 +38,7 @@ public class Main {
 
         */
 
+        /*
         Scanner sca = new Scanner(System.in);
         int sumaTotal = 0;
         int tamanoArray = 5;
@@ -54,7 +55,11 @@ public class Main {
             contador++;
         }
         System.out.println("Suma total: " + sumaTotal);
+        */
 
-
+        Vendedor vendedor1 = new Vendedor("Carlos","Bolaños",12,1125);
+        System.out.println(vendedor1.toString());
+        Vendedor vendedor2 = new Vendedor("Victor","Bolaños",13,1032);
+        System.out.println(vendedor2.toString());
     }
 }

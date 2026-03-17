@@ -9,6 +9,6 @@ public class Vendedor extends Persona{
     @Override
     public String toString() {
         return super.toString() + "\n" +
-                "Id vendedor: " + idVendedor;
+                "Id vendedor: " + this.idVendedor;
     }
 }
