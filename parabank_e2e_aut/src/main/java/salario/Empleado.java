@@ -20,5 +20,8 @@ public class Empleado {
         return salarioBase;
     }
 
+    public String getNombreEmpleado(){
+        return this.nombre + " " + this.apellido;
+    }
 
 }
