@@ -1,6 +1,6 @@
 package financiero;
 
-public class ProductoFinanciero {
+public abstract class ProductoFinanciero {
     private String tipoProducto;
     private Double saldo;
     private Double tasaInteres;
@@ -11,17 +11,19 @@ public class ProductoFinanciero {
         this.tasaInteres = tasaInteres;
     }
 
-    public Double calcularInteres(){
-        return saldo*(tasaInteres/100);
-    }
+    public abstract Double calcularInteres();
 
-    public String infoInteresProductoFinanciero(){
-        return "El interés del producto es: " + this.calcularInteres();
+    public abstract String infoInteresProductoFinanciero();
 
-    }
-
+    //Revisar el uso de los getters / protected. Cual es mejor en clases abstracts.
     public String getTipoProducto(){
         return tipoProducto;
-    }
+    };
+    public Double getSaldo(){
+      return saldo;
+    };
+    public Double getTasaInteres(){
+        return tasaInteres;
+    };
 
 }

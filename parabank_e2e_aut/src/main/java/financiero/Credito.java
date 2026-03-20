@@ -11,7 +11,7 @@ public class Credito extends ProductoFinanciero{
     }
     @Override
     public Double calcularInteres(){
-        return super.calcularInteres()*this.anyosCredito;
+        return super.getSaldo()*(super.getTasaInteres()/100)*this.anyosCredito;
     }
 
     @Override

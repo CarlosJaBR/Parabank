@@ -12,7 +12,7 @@ public class Cuenta extends ProductoFinanciero{
 
     @Override
     public Double calcularInteres(){
-        return super.calcularInteres();
+        return super.getSaldo()*(super.getTasaInteres()/100);
     }
 
     @Override
@@ -22,4 +22,5 @@ public class Cuenta extends ProductoFinanciero{
 
 
     }
+
 }
